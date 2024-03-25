@@ -35,6 +35,7 @@ int main(){
 	int guess;
 	cout << "\t\t Player One:\n ";
 	int userGuess = CheckUserGuess(oneLives, numberToGuess, guess);
+	numberToGuess = rand() % 10;
 	cout << "\t\t Player Two:\n ";
 	userGuess = CheckUserGuess(twoLives, numberToGuess, guess);
 	cout << "\nThe correct num: " << numberToGuess << endl;
